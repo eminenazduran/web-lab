@@ -1,5 +1,3 @@
-# Web LAB-1 - Hello Project
-
 ## Hakkinda
 Bu proje, Web Tasarimi ve Programlama dersi LAB-1 kapsaminda Vite + React + TypeScript kullanilarak olusturulmustur.
 
@@ -22,6 +20,3 @@ npm install
 npm run dev
 ```
 Tarayicida http://localhost:5173 adresini ac.
-
-## Ekran Goruntusu
-(ekran goruntusunu buraya ekle)
