@@ -26,7 +26,7 @@ function App() {
             <figcaption>Emine Naz Duran</figcaption>
           </figure>
           <p>Merhaba! Web gelistirme ögrenmeye basladigim icin e-ticaret siteleri tasarlamak ve yeni teknolojiler kesfetmek en buyuk hobim.</p>
-          <p><strong>Bölüm / Öğrenci No:</strong> Bilgisayar Programciligi / 235541093</p>
+          <p><strong>Bölüm / Öğrenci No:</strong> Yazılım Mühendisliği / 235541093</p>
           <ul>
             <li>HTML5 - Semantik</li>
             <li>CSS3 - A11y</li>
