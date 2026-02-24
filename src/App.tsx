@@ -22,7 +22,7 @@ function App() {
         <section id="hakkimda">
           <h2>Hakkimda</h2>
           <figure>
-            <img src="https://picsum.photos/150" alt="Emine Naz Duran'in uretilmis profil fotografi" />
+            <img src="/assets/profile.jpg" alt="Emine Naz Duran'in uretilmis profil fotografi" />
             <figcaption>Emine Naz Duran</figcaption>
           </figure>
           <p>Merhaba! Web gelistirme ögrenmeye basladigim icin e-ticaret siteleri tasarlamak ve yeni teknolojiler kesfetmek en buyuk hobim.</p>
