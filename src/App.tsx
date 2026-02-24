@@ -38,21 +38,15 @@ function App() {
         <section id="projeler">
           <h2>Projelerim</h2>
           <article>
-            <img src="/assets/project1.jpg" alt="E-ticaret sitesi anasayfa ekran goruntusu - Eğik Pisa Kulesi" />
-            <div>
-              <h3>E-Ticaret Sitesi</h3>
-              <p>Modern ve hizli bir e-ticaret platformu portotipi.</p>
-              <p><strong>Kullanilan Teknolojiler:</strong> React, Vite, CSS</p>
-            </div>
+            <h3>E-Ticaret Sitesi</h3>
+            <p>Modern ve hizli bir e-ticaret platformu portotipi.</p>
+            <p><strong>Kullanilan Teknolojiler:</strong> React, Vite, CSS</p>
           </article>
 
           <article>
-            <img src="/assets/project2.jpg" alt="Kisisel portfoy sayfasi ana ekran goruntusu - Sisli Orman Manzarasi" />
-            <div>
-              <h3>Kisisel Portfolyo</h3>
-              <p>Erisilebilirlik (a11y) standartlarina uygun hazirlanmis semantik HTML portfolyo sitesi. (Isbu Proje!)</p>
-              <p><strong>Kullanilan Teknolojiler:</strong> HTML5, CSS3, React</p>
-            </div>
+            <h3>Kisisel Portfolyo</h3>
+            <p>Erisilebilirlik (a11y) standartlarina uygun hazirlanmis semantik HTML portfolyo sitesi. (Isbu Proje!)</p>
+            <p><strong>Kullanilan Teknolojiler:</strong> HTML5, CSS3, React</p>
           </article>
         </section>
 
