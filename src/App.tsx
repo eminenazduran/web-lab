@@ -147,7 +147,7 @@ function App() {
       <footer>
         <p>&copy; 2025 Emine Naz Duran. Tüm hakları saklıdır.</p>
         <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <a href="#" style={{ textDecoration: 'none', color: 'var(--color-secondary)', fontWeight: 600 }}>LinkedIn</a>
+          <a href="https://www.linkedin.com/in/eminenazduran/" style={{ textDecoration: 'none', color: 'var(--color-secondary)', fontWeight: 600 }}>LinkedIn</a>
           <a href="https://github.com/eminenazduran" style={{ textDecoration: 'none', color: 'var(--color-secondary)', fontWeight: 600 }}>GitHub</a>
         </div>
       </footer>
