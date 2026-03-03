@@ -45,11 +45,13 @@ function App() {
           <h2>Projelerim</h2>
           <div className="project-grid">
             <article className="project-card">
-              <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=200&fit=crop" alt="CineProfile sinema uygulaması" />
+              <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=200&fit=crop" alt="CineProfile sinema uygulaması" />
               <h3>CineProfile-360</h3>
               <p>Kişisel sinema profilinizi keşfedin ve film zevkinize göre oluşturulmuş toplulukların bir parçası olarak yeni filmler bulun.</p>
               <ul className="skill-tags">
                 <li>JavaScript</li>
+                <li>Python</li>
+                <li>CSS</li>
               </ul>
             </article>
 
