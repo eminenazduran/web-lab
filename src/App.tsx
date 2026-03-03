@@ -8,7 +8,7 @@ function App() {
       </a>
 
       <header>
-        <h1>Emine Naz Duran</h1>
+        <h1 className="site-title">Emine Naz Duran</h1>
         <nav aria-label="Ana navigasyon">
           <ul>
             <li><a href="#hakkimda">Hakkimda</a></li>
@@ -21,33 +21,61 @@ function App() {
       <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
-          <figure>
-            <img src="/assets/pp.jpeg" alt="Emine Naz Duran'in profil fotografi" />
-            <figcaption>Emine Naz Duran</figcaption>
-          </figure>
-          <p>Merhaba! Web gelistirme ögrenmeye basladigim icin e-ticaret siteleri tasarlamak ve yeni teknolojiler kesfetmek en buyuk hobim.</p>
-          <p><strong>Bölüm / Öğrenci No:</strong> Yazılım Mühendisliği / 235541093</p>
-          <ul>
-            <li>HTML5 - Semantik</li>
-            <li>CSS3 - A11y</li>
-            <li>JavaScript</li>
-            <li>React & Vite</li>
-          </ul>
+          <div className="about-content">
+            <figure>
+              <img src="/assets/pp.jpeg" alt="Emine Naz Duran'in profil fotografi" />
+              <figcaption>Emine Naz Duran</figcaption>
+            </figure>
+            <div>
+              <p>Merhaba! Web gelistirme ögrenmeye basladigim icin e-ticaret siteleri tasarlamak ve yeni teknolojiler kesfetmek en buyuk hobim.</p>
+              <p><strong>Bölüm / Öğrenci No:</strong> Yazılım Mühendisliği / 235541093</p>
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Vite</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section id="projeler">
           <h2>Projelerim</h2>
-          <article>
-            <h3>E-Ticaret Sitesi</h3>
-            <p>Modern ve hizli bir e-ticaret platformu portotipi.</p>
-            <p><strong>Kullanilan Teknolojiler:</strong> React, Vite, CSS</p>
-          </article>
+          <div className="project-grid">
+            <article className="project-card">
+              <img src="https://picsum.photos/seed/project1/400/200" alt="E-Ticaret sitesi anasayfa ekran goruntusu" />
+              <h3>E-Ticaret Sitesi</h3>
+              <p>Modern ve hizli bir e-ticaret platformu portotipi.</p>
+              <ul className="skill-tags">
+                <li>React</li>
+                <li>Vite</li>
+                <li>CSS</li>
+              </ul>
+            </article>
 
-          <article>
-            <h3>Kisisel Portfolyo</h3>
-            <p>Erisilebilirlik (a11y) standartlarina uygun hazirlanmis semantik HTML portfolyo sitesi. (Isbu Proje!)</p>
-            <p><strong>Kullanilan Teknolojiler:</strong> HTML5, CSS3, React</p>
-          </article>
+            <article className="project-card">
+              <img src="/assets/lighthouse-ss.png" alt="Kisisel Portfolyo Lighthouse skoru" />
+              <h3>Kisisel Portfolyo</h3>
+              <p>Erisilebilirlik (a11y) standartlarina uygun hazirlanmis semantik HTML portfolyo sitesi. (Isbu Proje!)</p>
+              <ul className="skill-tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>React</li>
+              </ul>
+            </article>
+
+            <article className="project-card">
+              <img src="https://picsum.photos/seed/project3/400/200" alt="Hava Durumu Uygulamasi Arayuzu" />
+              <h3>Hava Durumu</h3>
+              <p>Anlik hava durumu bilgisi sunan web uygulamasi.</p>
+              <ul className="skill-tags">
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+            </article>
+          </div>
         </section>
 
         <section id="iletisim">
@@ -119,8 +147,8 @@ function App() {
       <footer>
         <p>&copy; 2025 Emine Naz Duran. Tum haklari saklidir.</p>
         <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <a href="#" style={{ textDecoration: 'none', color: '#2563EB', fontWeight: 600 }}>LinkedIn</a>
-          <a href="https://github.com/eminenazduran" style={{ textDecoration: 'none', color: '#2563EB', fontWeight: 600 }}>GitHub</a>
+          <a href="#" style={{ textDecoration: 'none', color: 'var(--color-secondary)', fontWeight: 600 }}>LinkedIn</a>
+          <a href="https://github.com/eminenazduran" style={{ textDecoration: 'none', color: 'var(--color-secondary)', fontWeight: 600 }}>GitHub</a>
         </div>
       </footer>
     </>
@@ -128,4 +156,3 @@ function App() {
 }
 
 export default App
-
