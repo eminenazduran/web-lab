@@ -30,8 +30,9 @@ function App() {
               <p>Merhaba! Yazılım geliştirme alanında kendimi sürekli geliştirmeye odaklı, yeni teknolojilere hızlı adapte olabilen ve problem çözme becerilerini ön planda tutan bir mühendis adayıyım. Özellikle yapay zeka ve veri bilimi konularında tutkuluyum ve bu alanlarda kendimi daha da geliştirmeyi hedefliyorum.</p>
               <p><strong>Bölüm / Öğrenci No:</strong> Yazılım Mühendisliği / 235541093</p>
               <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
-                <li>HTML5</li>
-                <li>CSS3</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Java</li>
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Vite</li>
