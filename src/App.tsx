@@ -45,13 +45,11 @@ function App() {
           <h2>Projelerim</h2>
           <div className="project-grid">
             <article className="project-card">
-              <img src="https://picsum.photos/seed/project1/400/200" alt="E-Ticaret sitesi anasayfa ekran görüntüsü" />
-              <h3>E-Ticaret Sitesi</h3>
-              <p>Modern ve hızlı bir e-ticaret platformu prototipi.</p>
+              <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=200&fit=crop" alt="CineProfile sinema uygulaması" />
+              <h3>CineProfile-360</h3>
+              <p>Kişisel sinema profilinizi keşfedin ve film zevkinize göre oluşturulmuş toplulukların bir parçası olarak yeni filmler bulun.</p>
               <ul className="skill-tags">
-                <li>React</li>
-                <li>Vite</li>
-                <li>CSS</li>
+                <li>JavaScript</li>
               </ul>
             </article>
 
