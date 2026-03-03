@@ -46,8 +46,8 @@ function App() {
           <div className="project-grid">
             <article className="project-card">
               <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=200&fit=crop" alt="CineProfile sinema uygulaması" />
-              <h3>CineProfile-360</h3>
-              <p>Kişisel sinema profilinizi keşfedin ve film zevkinize göre oluşturulmuş toplulukların bir parçası olarak yeni filmler bulun.</p>
+              <h3>CineProfile</h3>
+              <p>Film izleme zevkini keşfetmek için tasarlanmış bir uygulama.</p>
               <ul className="skill-tags">
                 <li>JavaScript</li>
                 <li>Python</li>
@@ -56,7 +56,7 @@ function App() {
             </article>
 
             <article className="project-card">
-              <img src="/assets/lighthouse-ss.png" alt="Kişisel Portfolyo Lighthouse skoru" />
+              <img src="/assets/portfolyo-ss.png" alt="Kişisel Portfolyo ekran görüntüsü" />
               <h3>Kişisel Portfolyo</h3>
               <p>Erişilebilirlik (a11y) standartlarına uygun hazırlanmış semantik HTML portfolyo sitesi. (İşbu Proje!)</p>
               <ul className="skill-tags">
