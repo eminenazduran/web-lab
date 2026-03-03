@@ -129,6 +129,15 @@ section h2 {
   object-fit: cover;
 }
 
+/* Yazi kapsayicisi icindeki paragraf araliklari */
+.about-text-container p {
+  margin-bottom: var(--space-sm);
+}
+
+.about-text-container .skill-tags {
+  margin-top: var(--space-md);
+}
+
 /* Beceri Etiketleri */
 .skill-tags {
   display: flex;

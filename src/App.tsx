@@ -26,8 +26,8 @@ function App() {
               <img src="/assets/pp.jpeg" alt="Emine Naz Duran'ın profil fotoğrafı" />
               <figcaption>Emine Naz Duran</figcaption>
             </figure>
-            <div>
-              <p>Merhaba! Web geliştirme öğrenmeye başladığım için e-ticaret siteleri tasarlamak ve yeni teknolojiler keşfetmek en büyük hobim.</p>
+            <div className="about-text-container">
+              <p>Merhaba! Yazılım geliştirme alanında kendimi sürekli geliştirmeye odaklı, yeni teknolojilere hızlı adapte olabilen ve problem çözme becerilerini ön planda tutan bir mühendis adayıyım. Özellikle yapay zeka ve veri bilimi konularında tutkuluyum ve bu alanlarda kendimi daha da geliştirmeyi hedefliyorum.</p>
               <p><strong>Bölüm / Öğrenci No:</strong> Yazılım Mühendisliği / 235541093</p>
               <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
                 <li>HTML5</li>
