@@ -1,61 +1,62 @@
-# Web LAB-1 - Hello Project
+# Web LAB-3 - Responsive Layout
 
-## Hakkinda
-Bu proje, Web Tasarimi ve Programlama dersi LAB-1 kapsaminda Vite + React + TypeScript kullanilarak olusturulmustur.
+## Hakkında
+Bu proje, Web Tasarımı ve Programlama dersi LAB-3 kapsamında Vite + React + TypeScript kullanılarak oluşturulmuştur. Ayrıca modern layout araçları (Flexbox/Grid), tasarım sistemi altyapısı (CSS değişkenleri) ve Media Query kullanılarak mobile-first prensibiyle responsive uyumluluğu sağlanmıştır.
 
-## Gelistirici
-- **Ad Soyad:** Emine
-- **Ogrenci No:** 123456789
+## Geliştirici
+- **Ad Soyad:** Emine Naz Duran
+- **Öğrenci No:** 235541093
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 - React 18
 - TypeScript
 - Vite
+- Modern CSS (Flexbox, Grid, CSS Değişkenleri, Mobile-First Medya Sorguları)
 
 ## Kurulum
 ```bash
 npm install
 ```
 
-## Calistirma
+## Çalıştırma
 ```bash
 npm run dev
 ```
-Tarayicida http://localhost:5173 adresini ac.
+Tarayıcıda http://localhost:5173 adresini aç.
 
-## Ekran Goruntusu
+## Ekran Görüntüsü
 Mobil, Tablet ve Masaüstü ekran görüntüleri `/screenshots` klasörü içerisindedir.
 
 ---
 
-# CSS Kararlari
+# CSS Kararları
 
-## 1. Breakpoint Secimi
-- **Neden 640px ve 1024px sectim?** 
-  Mobile-first yaklasimini benimsedigim icin, varsayilan ekran darligini hesaba katarak en sık kullanilan kucuk telefon, tablet (640px+) ve laptop/masaustu (1024px+) cihazlarina gore en ideal kirilim noktalarini belirledim.
-- **Icerigim bu noktalarda nasil degisiyor?** 
-  Mobilde her sey alt alta ve ortali (ornegin header ve prolejer tek sutun). 640px'den itibaren `Hakkimda` alani yanyana geciyor, elementlerin margin-padding degerleri artiyor. 1024px'te ana icerik genisligi max-width ile sinirlaniyor ve projeler 3 sutun seklinde genisliyor.
+## 1. Breakpoint Seçimi
+- **Neden 640px ve 1024px seçtim?** 
+  Mobile-first yaklaşımını benimsediğim için, varsayılan ekran darlığını hesaba katarak en sık kullanılan küçük telefon, tablet (640px+) ve dizüstü/masaüstü (1024px+) cihazlarına göre en ideal kırılım noktalarını belirledim.
+- **İçeriğim bu noktalarda nasıl değişiyor?** 
+  Mobilde her şey alt alta ve ortalı (örneğin header ve projeler tek sütun). 640px'den itibaren `Hakkımda` alanı yan yana geçiyor, elementlerin margin-padding değerleri artıyor. 1024px'te ana içerik genişliği max-width ile sınırlanıyor ve projeler 3 sütun şeklinde genişliyor.
 
 ## 2. Layout Tercihleri
-- **Header icin neden Flexbox sectim?**
-  Header icerisinde dikey merkezleme ve elemanlar arasindaki mesafeyi orantili ayarlamak (justify-content: space-between) icin tek eksen duzen saglayan en iyi arac Flexbox'tir. Mobilde de tek bir komutla flex yonunu degistirebilmek isimi kolaylastirmaktadir.
-- **Proje kartlari icin neden Grid sectim?**
-  Grid, iki boyutlu duzen (satir/sutun) hizalamada en iyisidir. Sutunlari grid-template-columns ile rahatca parcalara ayirabilir, aralarina eist bossluk birakabilirim.
-- **auto-fit mi auto-fill mi kullandim, neden?**
-  `auto-fit` kullandim cunku var olan bos alana mevcut kartlarin responsive bir sekilde yayilip sığdirilmasini daha pratik buldum. Boylelikle medya sorgusu olmadan bosalan sutunlari projeler ustlenerek tasarimi dengeleyebildi.
+- **Header için neden Flexbox seçtim?**
+  Header içerisinde dikey merkezleme ve elemanlar arasındaki mesafeyi orantılı ayarlamak (justify-content: space-between) için tek eksen düzen sağlayan en iyi araç Flexbox'tır. Mobilde de tek bir komutla flex yönünü değiştirebilmek işimi kolaylaştırmaktadır.
+- **Proje kartları için neden Grid seçtim?**
+  Grid, iki boyutlu düzen (satır/sütun) hizalamada en iyisidir. Sütunları grid-template-columns ile rahatça parçalara ayırabilir, aralarına eşit boşluk bırakabilirim.
+- **auto-fit mi auto-fill mi kullandım, neden?**
+  `auto-fit` kullandım çünkü var olan boş alana mevcut kartların responsive bir şekilde yayılıp sığdırılmasını daha pratik buldum. Böylelikle medya sorgusu olmadan boşalan sütunları projeler üstlenerek tasarımı dengeleyebildi.
 
 ## 3. Design Tokens
-- **Hangi renk paletini sectim ve neden?**
-  Guvenilir ve teknolojik cagrisimlarindan dolayi "blue-indigo" ekseninde modern bir renk paleti sectim. Gozu yormamasi adina yuzey ve background olarak temiz bir "slate" beyaz/girisi belirleyici rol oynadi.
-- **Spacing skalasini nasil belirledim?**
-  `rem` birimleri ve CSS degiskenleri kullanarak aralarında dörder px fark barindiran orantili ve kolay anlasilabir bir bosluk (gap/padding/margin vb.) agi tanimladim. 4px, 8px, 16px, 24px.. gibi.
-- **Fluid typography icin clamp degerlerini nasil ayarladim?**
-  En kucuk yaziyi `0.8rem` (ortalama 12-14px), tercih edileni kismi dinamik `vw` birim ile (`0.9rem + 0.5vw` vs) verdim ve maksimuna da fonta gore `1.125rem`, `3.5rem` vs sirali enstumanlar atladim, boylece yazi aniden degil tarayici buyudukce orantili buyuyecek.
+- **Hangi renk paletini seçtim ve neden?**
+  Güvenilir ve teknolojik çağrışımlarından dolayı "blue-indigo" ekseninde modern bir renk paleti seçtim. Gözü yormaması adına yüzey ve background olarak temiz bir "slate" beyaz/grisi belirleyici rol oynadı.
+- **Spacing skalasını nasıl belirledim?**
+  `rem` birimleri ve CSS değişkenleri kullanarak aralarında dörder px fark barındıran orantılı ve kolay anlaşılabilir bir boşluk (gap/padding/margin vb.) ağı tanımladım. 4px, 8px, 16px, 24px.. gibi.
+- **Fluid typography için clamp değerlerini nasıl ayarladım?**
+  En küçük yazıyı `0.8rem` (ortalama 12-14px), tercih edileni kısmı dinamik `vw` birim ile (`0.9rem + 0.5vw` vs) verdim ve maksimuma da fonta göre `1.125rem`, `3.5rem` vs sıralı enstrümanlar atadım, böylece yazı aniden değil tarayıcı büyüdükçe orantılı büyüyecek.
 
 ## 4. Responsive Stratejiler
-- **Mobile-first yaklasimini nasil uyguladim?**
-  Ana CSS kodlarimi kirilim noktalarini olusturmadan (hic media query koymadan) genel varsayilan kucul mobil cihazlara uygun kaleme aldim. Arindan `min-width: 640px` ve `1024px` query'leri ekleyerek gerekli eklemeleri sagladim.
-- **Hangi elemanlar breakpoint'lerde degisiyor?**
-  Navigasyon ogeleri, proje listeleme sutun durumlari (flex direction row'a, grid column auto vs. gecmesi), sayfanin padding limitleri, butonlarin sag/sola daralmasi gibi genislik acisindan alan talep eden alanlar degisiyor.
-- **Gorsel boyutlari nasil yonettim?**
-  Resim tasmasina izin vermemek adina genel `img` taniminda `max-width: 100%` seklinde genislik sagladim. Box icinde esnek form korumak adina `object-fit: cover` yapisini ve `aspect-ratio` kullandim.
+- **Mobile-first yaklaşımını nasıl uyguladım?**
+  Ana CSS kodlarımı kırılım noktalarını oluşturmadan (hiç media query koymadan) genel varsayılan küçük mobil cihazlara uygun kaleme aldım. Ardından `min-width: 640px` ve `1024px` query'leri ekleyerek gerekli eklemeleri sağladım.
+- **Hangi elemanlar breakpoint'lerde değişiyor?**
+  Navigasyon öğeleri, proje listeleme sütun durumları (flex direction row'a, grid column auto vs. geçmesi), sayfanın padding limitleri, butonların sağ/sola daralması gibi genişlik açısından alan talep eden alanlar değişiyor.
+- **Görsel boyutları nasıl yönettim?**
+  Resim taşmasına izin vermemek adına genel `img` tanımında `max-width: 100%` şeklinde genişlik sağladım. Kutucuk (box) içinde esnek formu korumak adına `object-fit: cover` yapısını ve `aspect-ratio` kullandım.
