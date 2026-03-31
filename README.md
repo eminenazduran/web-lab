@@ -1,16 +1,15 @@
-# Web Tasarımı ve Programlama LAB-4
+# Web Tasarımı ve Programlama LAB-5
 
 ## Hakkında
-Bu proje, Web Tasarımı ve Programlama dersi **LAB-4** kapsamında geliştirilmiş olup; Tailwind CSS framework'ü, üretken UI mantığı ve "Component" (Bileşen) yaklaşımını içermektedir. Projede geleneksel CSS yerine "Utility-First" CSS modeli kullanılmış, sistem Vite + React + TypeScript tabanlı olarak inşa edilmiştir.
+Bu proje, Web Tasarımı ve Programlama dersi **LAB-5** kapsamında geliştirilmiş olup; React'te "State" yönetimi, modern JavaScript (ES2020+) özellikleri ve TypeScript temel tiplerini içermektedir. Projede geleneksel DOM manipülasyonu yerine "veri odaklı" (state-driven) bileşen (component) yapısı kullanılmıştır.
 
 Bu laboratuvarın öne çıkan özellikleri şunlardır:
-- **Tailwind CSS v4** entegrasyonu ve `@theme` tabanlı özel tasarım token (design token) yapılandırması.
-- **Utility-First Yaklaşımı** ile HTML üzerinde doğrudan class'larla hızlı ve esnek stil yönetimi.
-- **Responsive Tasarım**: Tailwind'in `sm:`, `md:`, `lg:` gibi prefix'leri kullanılarak sıfırdan "mobile-first" uyumlu arayüz.
-- **Dark Mode (Karanlık Tema)**: Sayfadaki değiştirme (toggle) butonuna bağlı olarak anında değişen `dark:` state varyantları.
-- **Component (Bileşen) Yaklaşımı**: Kod tekrarını önlemek için farklı kombinasyonları (renk, boyut, disabled vb.) destekleyen modüler `Button`, `Input`, `Card` ve `Alert` React bileşenleri.
-- **UI Kit Sayfası**: En alt bölümde tüm tasarlanan bileşenlerin bir arada (14'ten fazla varyasyonuyla) sergilendiği özel bir UI Kit demonstrasyonu.
-- **Erişilebilirlik (a11y) Uyumluluğu**: Tıklanabilir öğelerde focus yönetimleri (`focus:ring`), ekran okuyucu asistanlar (`aria-label`, `role="alert"`, `aria-describedby`) ve semantik yapı.
+- **TypeScript Tipleri (Interfaces & Types):** Proje verisini modellemek için `Project`, `Category`, `SortField` ve `SortOrder` gibi tip tanımları oluşturuldu. Katı tip güvenliği (strict typing) ile çalışıldı ve `any` kullanımından kaçınıldı.
+- **ES Modules Yapısı:** Kodun modülerliği için veriler, yardımcı fonksiyonlar (`utils`) ve veri çekme servisleri (`services`) ayrı dosyalara bölünüp `import/export` ile sayfada toplandı.
+- **Fetch API & Async/Await:** Yerel mock proje verileri (`public/data/projects.json`) asenkron fonksiyonlarla çekildi ve arayüze entegre edildi.
+- **Hata Yönetimi (Error Handling):** `try/catch/finally` kullanılarak ağ/veri hataları yakalandı ve kullanıcıya özel "Hata" durumları (Alert bileşeniyle) gösterildi.
+- **Gelişmiş Filtreleme ve Sıralama:** Metin tabanlı arama (başlık, açıklama ve teknolojilerde), kategori seçimi, ve (yıla veya başlığa göre) artan/azalan sıralama özellikleri başarılı bir şekilde uygulandı.
+- **Loading & Empty State:** Veriler çekilirken "Yükleniyor..." uyarısı eklendi; arama sonucu eşleşen veri yoksa özel boş liste durumları yönetildi.
 
 ## Geliştirici
 - **Ad Soyad:** Emine Naz Duran
@@ -21,6 +20,7 @@ Bu laboratuvarın öne çıkan özellikleri şunlardır:
 - TypeScript
 - Vite
 - Tailwind CSS v4
+- Fetch API (Modern JS/ES2020+)
 
 ## Kurulum
 Aşağıdaki komutla proje klasöründe gerekli tüm paketleri kurabilirsiniz:
@@ -33,4 +33,4 @@ Projeyi yerel sunucuda başlatmak için:
 ```bash
 npm run dev
 ```
-Tarayıcınızda `http://localhost:5173` adresini açarak uygulamayı görebilir, sağ üst köşede yer alan buton ile sayfayı **Dark Mode** deneyimiyle inceleyebilir ve sayfanın alt kısmındaki zengin **UI Kit** bölümünü test edebilirsiniz.
+Tarayıcınızda `http://localhost:5173` adresini açarak uygulamayı görebilirsiniz. Filtreleme, arama ve sıralama seçeneklerini test edebilirsiniz.
