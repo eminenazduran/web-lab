@@ -1,15 +1,16 @@
-# Web Tasarımı ve Programlama LAB-5
+# Web Tasarımı ve Programlama LAB-6 (Ara Checkpoint #1)
 
 ## Hakkında
-Bu proje, Web Tasarımı ve Programlama dersi **LAB-5** kapsamında geliştirilmiş olup; React'te "State" yönetimi, modern JavaScript (ES2020+) özellikleri ve TypeScript temel tiplerini içermektedir. Projede geleneksel DOM manipülasyonu yerine "veri odaklı" (state-driven) bileşen (component) yapısı kullanılmıştır.
+Bu proje, Web Tasarımı ve Programlama dersi **LAB-6** (Ara Checkpoint #1) kapsamında geliştirilmiş olup; React bileşen (component) mimarisi, Props ve State yönetimi, form veri doğrulaması (validation), ve useMemo ile performans optimizasyonlarını içermektedir. Arayüzün geliştirilmesi tamamen bütünleşik çalışan bir portfolyo uygulamasına dönüştürülmüştür. 
 
 Bu laboratuvarın öne çıkan özellikleri şunlardır:
-- **TypeScript Tipleri (Interfaces & Types):** Proje verisini modellemek için `Project`, `Category`, `SortField` ve `SortOrder` gibi tip tanımları oluşturuldu. Katı tip güvenliği (strict typing) ile çalışıldı ve `any` kullanımından kaçınıldı.
-- **ES Modules Yapısı:** Kodun modülerliği için veriler, yardımcı fonksiyonlar (`utils`) ve veri çekme servisleri (`services`) ayrı dosyalara bölünüp `import/export` ile sayfada toplandı.
-- **Fetch API & Async/Await:** Yerel mock proje verileri (`public/data/projects.json`) asenkron fonksiyonlarla çekildi ve arayüze entegre edildi.
-- **Hata Yönetimi (Error Handling):** `try/catch/finally` kullanılarak ağ/veri hataları yakalandı ve kullanıcıya özel "Hata" durumları (Alert bileşeniyle) gösterildi.
-- **Gelişmiş Filtreleme ve Sıralama:** Metin tabanlı arama (başlık, açıklama ve teknolojilerde), kategori seçimi, ve (yıla veya başlığa göre) artan/azalan sıralama özellikleri başarılı bir şekilde uygulandı.
-- **Loading & Empty State:** Veriler çekilirken "Yükleniyor..." uyarısı eklendi; arama sonucu eşleşen veri yoksa özel boş liste durumları yönetildi.
+- **Component (Bileşen) Mimarisi:** Uygulama modüler, yeniden kullanılabilir parçalara ayrıldı. `layout`, `sections`, `forms` ve `ui` gibi klasörlerde organize edildi (`App.tsx` artık temel orkestra şefi rolünü görmektedir). 
+- **Props ve Props TypeScript İnterfaceleri:** Component'ler arasında veri aktarımı `props` ile sağlandı. Props özellikleri TypeScript interfaceleriyle tiplendirildi. Ebeveynden çocuğa doğru tek yönlü veri akışına (one-way data flow) dikkat edildi. 
+- **State Yönetimi (\`useState\`):** Component düzeyinde durumlar yönetildi, hem array/object'ler (örneğin filtreler) mutable olmayan yöntemlerle (`useState` + spread syntax) güncellendi.
+- **Performans İyileştirmesi (\`useMemo\`):** Liste filtreleme/sıralama kısmında veri büyük olduğunda her render'da aynı hesaplama yapılmaması için `useMemo` kullanılarak pahalı (expensive) hesaplamalar memoize edildi (önbelleğe alındı). 
+- **Kontrollü Formlar (Controlled Forms):** İletişim formu (`ContactForm.tsx`) state kullanılarak tamamen kontrollü hale getirildi (`value` ve `onChange` pratikleriyle) ve gönderilmeden önce alanların (isim, e-posta, konu, mesaj) kurallarına göre validation'ı yapılarak hata mesajları kullanıcıya zarif biçimde gösterildi. 
+- **Render Optimizasyonu:** `key` prop'unun önemi dikkate alındı ve mappinglerde array içindeki eşsiz (unique) özellikler anahtar (key) olarak kullanıldı. Index kullanılmamasına özen gösterildi.
+- **İleri Seviye Arayüz (Checkpoint #1):** Ekranda navigasyon için `Header` ve `Footer`, kişisel bilgiler için `Hero`, `About` ve `Skills`, listeleme için `ProjectList` ve anlık etkileşim için `ContactSection` var edilerek uygulamanın demo niteliği tamamlandı.
 
 ## Geliştirici
 - **Ad Soyad:** Emine Naz Duran
@@ -20,7 +21,8 @@ Bu laboratuvarın öne çıkan özellikleri şunlardır:
 - TypeScript
 - Vite
 - Tailwind CSS v4
-- Fetch API (Modern JS/ES2020+)
+- Fetch API & Modern ES6+ Modülleri
+- React Hooks (`useState`, `useEffect`, `useMemo`)
 
 ## Kurulum
 Aşağıdaki komutla proje klasöründe gerekli tüm paketleri kurabilirsiniz:
@@ -33,4 +35,5 @@ Projeyi yerel sunucuda başlatmak için:
 ```bash
 npm run dev
 ```
-Tarayıcınızda `http://localhost:5173` adresini açarak uygulamayı görebilirsiniz. Filtreleme, arama ve sıralama seçeneklerini test edebilirsiniz.
+
+Tarayıcınızda `http://localhost:5173` adresini açarak uygulamayı görebilirsiniz. Listeleme modülünü, kontrollü "İletişim" formunu (hata ve başarı senaryoları) demo edebilirsiniz.
